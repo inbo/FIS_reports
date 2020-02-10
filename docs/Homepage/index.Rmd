@@ -66,13 +66,15 @@ The reports embedded are however all finished.
 Our current list of interactive reports is:
   
 ```{r filenames, include=FALSE}
-fileNames <- Sys.glob(file.path("Reports","*"))
+fileNames <- Sys.glob(file.path("../Reports","*"))
 ```
 
-```{r list, results='asis'}
+```{r list, echo=FALSE, results='asis'}
 for (i in fileNames){
-  j <- gsub("Reports/","",i)
-  cat("[",j,"](https://inbo.github.io/fis-reports/",i,")",sep="", fill=TRUE)
+  j <- gsub("../Reports/","",i)
+  cat("[",j,"](//inbo.github.io/fis-reports/",i,"/index.html)", sep="")
+  cat(fill=TRUE)
+  cat("\n")
 }
 ```
 
