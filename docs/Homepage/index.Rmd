@@ -63,7 +63,7 @@ if (!interactive() && opts_knit$get("rmarkdown.pandoc.to") != "html") {
 
 Welcome to our interactive reports homepage, which, clearly, is still under construction.
 The reports embedded are however all finished.
-Our current list of interactive reports is:
+Our current (limited) list of interactive reports is:
   
 ```{r filenames, include=FALSE}
 fileNames <- Sys.glob(file.path("../Reports","*"))
@@ -72,7 +72,7 @@ fileNames <- Sys.glob(file.path("../Reports","*"))
 ```{r list, echo=FALSE, results='asis'}
 for (i in fileNames){
   j <- gsub("../Reports/","",i)
-  cat("[",j,"](//inbo.github.io/fis-reports/",i,"/index.html)", sep="")
+  cat("[",j,"](//inbo.github.io/fis-reports/Reports/",j,"/index.html)", sep="")
   cat(fill=TRUE)
   cat("\n")
 }
