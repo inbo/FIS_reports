@@ -16,6 +16,8 @@ This name will appear as the project title on the homepage.
 
 4. Paste the Bookdown output of your report under this folder (html files + supporting folders).
 
+> make sure a file named index.html is present
+
 5. Under the FIS_reports/Homepage folder open fisreports.Rproj file. Run the index.Rmd file trhough the 'Knit to gitbook' command.
 This will generate a new index.html file in the FIS_reports root folder.
 
