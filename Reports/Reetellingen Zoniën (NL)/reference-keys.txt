@@ -6,9 +6,9 @@ fig:figkivglruw
 fig:figkivglgem
 tab:tabduur
 fig:figdistance
+tab:tabAfstand
 fig:figdistgem
 fig:figdistklasse
-fig:figdistanalyse
 h:inleiding
 h:ki
 h:methodologie
@@ -21,7 +21,7 @@ h:duur
 h:oorzaken
 h:lageraantal
 h:zichtbaarheid
-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling
+h:distancesampling
 methode
 resultaten
 problemenknelpunten-tijdens-het-onderzoek
