@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html  lang="fr">
 
 <head>
 
@@ -32,7 +32,9 @@
   
 <link rel="prev" href="5-conclusions.html"/>
 
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -47,15 +49,14 @@
 
 
 
+<link rel="stylesheet" href="css/inbo_rapport.css" type="text/css"/>
 
-
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
-
-<link rel="stylesheet" href="css/inbo_rapport.css" type="text/css"/>
 
 </head>
 
@@ -66,28 +67,33 @@
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
 
     <div class="book-summary">
-      <nav role="navigation">
+<nav role="navigation">
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Remerciements</a></li>
 <li class="chapter" data-level="1" data-path="1-h-inleiding.html"><a href="1-h-inleiding.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="2-h-ki.html"><a href="2-h-ki.html"><i class="fa fa-check"></i><b>2</b> L’indice kilométrique (IK) - Méthodologie et mise en œuvre en Forêt de Soignes</a><ul>
+<li class="chapter" data-level="2" data-path="2-h-ki.html"><a href="2-h-ki.html"><i class="fa fa-check"></i><b>2</b> L’indice kilométrique (IK) - Méthodologie et mise en œuvre en Forêt de Soignes</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="2-h-ki.html"><a href="2-h-ki.html#h:methodologie"><i class="fa fa-check"></i><b>2.1</b> Méthodologie</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html"><i class="fa fa-check"></i><b>3</b> Résultats</a><ul>
+<li class="chapter" data-level="3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html"><i class="fa fa-check"></i><b>3</b> Résultats</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kilometers"><i class="fa fa-check"></i><b>3.1</b> Nombre de kilomètres parcourus</a></li>
 <li class="chapter" data-level="3.2" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:maxmin"><i class="fa fa-check"></i><b>3.2</b> Nombres maximum et minimum de chevreuils observés chaque année</a></li>
-<li class="chapter" data-level="3.3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kijaar"><i class="fa fa-check"></i><b>3.3</b> Evolution de l’IK de 2008 à 2020</a></li>
-<li class="chapter" data-level="3.4" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kiparcours"><i class="fa fa-check"></i><b>3.4</b> Variation des valeurs IK par parcours en 2020</a></li>
+<li class="chapter" data-level="3.3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kijaar"><i class="fa fa-check"></i><b>3.3</b> Evolution de l’IK de 2008 à 2021</a></li>
+<li class="chapter" data-level="3.4" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kiparcours"><i class="fa fa-check"></i><b>3.4</b> Variation des valeurs IK par parcours en 2021</a></li>
 <li class="chapter" data-level="3.5" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:duur"><i class="fa fa-check"></i><b>3.5</b> Durée de la réalisation des parcours</a></li>
-<li class="chapter" data-level="3.6" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:oorzaken"><i class="fa fa-check"></i><b>3.6</b> Causes des variations du nombre de chevreuils observés</a><ul>
+<li class="chapter" data-level="3.6" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:oorzaken"><i class="fa fa-check"></i><b>3.6</b> Causes des variations du nombre de chevreuils observés</a>
+<ul>
 <li class="chapter" data-level="3.6.1" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:lageraantal"><i class="fa fa-check"></i><b>3.6.1</b> Baisse du nombre de chevreuils</a></li>
 <li class="chapter" data-level="3.6.2" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:zichtbaarheid"><i class="fa fa-check"></i><b>3.6.2</b> Modification de la visibilité des parcours</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><a href="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><i class="fa fa-check"></i><b>4</b> Estimation de la population de chevreuils à l’aide du <em>distance sampling</em></a><ul>
+<li class="chapter" data-level="4" data-path="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><a href="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><i class="fa fa-check"></i><b>4</b> Estimation de la population de chevreuils à l’aide du <em>distance sampling</em></a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><a href="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html#matériel-et-méthodes"><i class="fa fa-check"></i><b>4.1</b> Matériel et méthodes</a></li>
-<li class="chapter" data-level="4.2" data-path="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><a href="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html#résultats"><i class="fa fa-check"></i><b>4.2</b> Résultats</a><ul>
+<li class="chapter" data-level="4.2" data-path="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><a href="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html#résultats"><i class="fa fa-check"></i><b>4.2</b> Résultats</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html"><a href="4-estimation-de-la-population-de-chevreuils-à-laide-du-distance-sampling.html#problèmes-rencontrés"><i class="fa fa-check"></i><b>4.2.1</b> Problèmes rencontrés</a></li>
 </ul></li>
 </ul></li>
@@ -113,27 +119,28 @@
 <div id="references" class="section level1 unnumbered">
 <h1>References</h1>
 
-<div id="refs" class="references">
-<div>
-<p>Boone, N, J Casaer, J Vercammen, C Malengreaux, and A Licoppe. 2020. <em>Ondersteuningsproject bij de uitvoering van de reemonitoring in het Zoniënwoud: Jaarlijks rapport, Periode: 2008-2019.</em> Brussel, België: Rapporten van het Instituut voor Natuuren Bosonderzoek.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div class="csl-entry">
+Boone N., Casaer J., Vercammen J., Malengreaux C. &amp; Licoppe A. (2020). <span>Ondersteuningsproject bij de uitvoering van de reemonitoring in het Zoniënwoud: Jaarlijks rapport, Periode: 2008-2019.</span> <span>Rapporten van het Instituut voor Natuuren Bosonderzoek</span>, Brussel, België.
 </div>
-<div>
-<p>Buckland, ST, DR Anderson, Burnham KP, JLM Laake, DL Borchers, and L Thomas. 2001. <em>Introduction to Distance Sampling, Estimating abundance of biological populations</em>. Oxford, UK: University Press.</p>
+<div class="csl-entry">
+Buckland S., Anderson D., KP B., Laake J., Borchers D. &amp; Thomas L. (2001). <span>Introduction to Distance Sampling, Estimating abundance of biological populations</span>. <span>University Press</span>, Oxford, UK.
 </div>
-<div>
-<p>Casaer, J, and C Malengreaux. 2008. <em>Studie ter voorbereiding van het monitoren van de reewildpopulatiegrootte in Zoniën Overzicht van bestaande methoden en hun toepasbaarheid in Zoniën.</em> Brussel, België: Rapporten van het Instituut voor Natuur- en Bosonderzoek, INBO.R.2008.26.</p>
+<div class="csl-entry">
+Casaer J. &amp; Malengreaux C. (2008). <span>Studie ter voorbereiding van het monitoren van de reewildpopulatiegrootte in Zoniën Overzicht van bestaande methoden en hun toepasbaarheid in Zoniën.</span> <span>Rapporten van het Instituut voor Natuur- en Bosonderzoek, INBO.R.2008.26</span>, Brussel, België.
 </div>
-<div>
-<p>Huysentruyt, F, C Malengreaux, J Vercammen, J Casaer, and A Licoppe. 2015. <em>Ondersteuningsproject bij de uitvoering van de reemonitoring in het Zoniënwoud /Mission d’appui pour le recensement du chevreuil dans le massif sonien: Jaarlijks rapport / Rapport annuel, Periode / Période de référence: 2008-2015.</em> Brussel, België: Rapporten van het Instituut voor Natuuren Bosonderzoek.</p>
+<div class="csl-entry">
+Huysentruyt F., Malengreaux C., Vercammen J., Casaer J. &amp; Licoppe A. (2015). <span>Ondersteuningsproject bij de uitvoering van de reemonitoring in het Zoniënwoud /Mission d’appui pour le recensement du chevreuil dans le massif sonien: Jaarlijks rapport / Rapport annuel, Periode / Période de référence: 2008-2015.</span> <span>Rapporten van het Instituut voor Natuuren Bosonderzoek</span>, Brussel, België.
 </div>
-<div>
-<p>Malengreaux, C, and J Casaer. 2008. <em>Mission d’appui pour la mise en place d’un recensement chevreuil dans le massif sonien. Mission d’appui financée par l’IBGE et confiée à l’asbl Wildlife and Man : 2008.</em> Brussel, België: Wildlife and Man.</p>
+<div class="csl-entry">
+Malengreaux C. &amp; Casaer J. (2008). <span>Mission d’appui pour la mise en place d’un recensement chevreuil dans le massif sonien. Mission d’appui financée par l’IBGE et confiée à l’asbl Wildlife and Man : 2008.</span> <span>Wildlife and Man</span>, Brussel, België.
 </div>
-<div>
-<p>Vercammen, J, F Huysentruyt, and J Casaer. 2011. <em>Reewildtellingen: Overzicht van de resultaten uit de verschillende gebieden.</em> Brussel, België: Rapporten van het Instituut voor Natuur- en Bosonderzoek.</p>
+<div class="csl-entry">
+Vercammen J., Huysentruyt F. &amp; Casaer J. (2011). <span>Reewildtellingen: Overzicht van de resultaten uit de verschillende gebieden.</span> <span>Rapporten van het Instituut voor Natuur- en Bosonderzoek</span>, Brussel, België.
 </div>
 </div>
 </div>
+
             </section>
         </div>
       </div>
@@ -142,7 +149,6 @@
 
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -161,6 +167,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -181,6 +188,10 @@ gitbook.start({
 "text": null
 },
 "download": ["RapportSoignes.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

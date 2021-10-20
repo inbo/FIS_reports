@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html  lang="nl">
 
 <head>
 
@@ -30,9 +30,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html"/>
+<link rel="prev" href="4-h-distancesampling.html"/>
 <link rel="next" href="referenties.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +51,8 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -66,29 +69,34 @@
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
 
     <div class="book-summary">
-      <nav role="navigation">
+	<nav role="navigation">
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Dankwoord</a></li>
 <li class="chapter" data-level="1" data-path="1-h-inleiding.html"><a href="1-h-inleiding.html"><i class="fa fa-check"></i><b>1</b> Inleiding</a></li>
-<li class="chapter" data-level="2" data-path="2-h-ki.html"><a href="2-h-ki.html"><i class="fa fa-check"></i><b>2</b> De kilometerindex (KI) in het Zoniënwoud</a><ul>
+<li class="chapter" data-level="2" data-path="2-h-ki.html"><a href="2-h-ki.html"><i class="fa fa-check"></i><b>2</b> De kilometerindex (KI) in het Zoniënwoud</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="2-h-ki.html"><a href="2-h-ki.html#h:methodologie"><i class="fa fa-check"></i><b>2.1</b> Methodologie</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html"><i class="fa fa-check"></i><b>3</b> Resultaten</a><ul>
+<li class="chapter" data-level="3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html"><i class="fa fa-check"></i><b>3</b> Resultaten</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kilometers"><i class="fa fa-check"></i><b>3.1</b> Aantal kilometer parcours afgelegd</a></li>
 <li class="chapter" data-level="3.2" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:maxmin"><i class="fa fa-check"></i><b>3.2</b> Maximaal en minimaal aantal waargenomen reeën per jaar</a></li>
-<li class="chapter" data-level="3.3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kijaar"><i class="fa fa-check"></i><b>3.3</b> Evolutie van de kilometerindex van 2008 tot 2020</a></li>
-<li class="chapter" data-level="3.4" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kiparcours"><i class="fa fa-check"></i><b>3.4</b> Evolutie van de kilometerindex per parcours in 2020</a></li>
+<li class="chapter" data-level="3.3" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kijaar"><i class="fa fa-check"></i><b>3.3</b> Evolutie van de kilometerindex van 2008 tot 2021</a></li>
+<li class="chapter" data-level="3.4" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:kiparcours"><i class="fa fa-check"></i><b>3.4</b> Evolutie van de kilometerindex per parcours in 2021</a></li>
 <li class="chapter" data-level="3.5" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:duur"><i class="fa fa-check"></i><b>3.5</b> Duur van de tellingen</a></li>
-<li class="chapter" data-level="3.6" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:oorzaken"><i class="fa fa-check"></i><b>3.6</b> Oorzaken van veranderingen in het aantal reeën waargenomen per jaar</a><ul>
+<li class="chapter" data-level="3.6" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:oorzaken"><i class="fa fa-check"></i><b>3.6</b> Oorzaken van veranderingen in het aantal reeën waargenomen per jaar</a>
+<ul>
 <li class="chapter" data-level="3.6.1" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:lageraantal"><i class="fa fa-check"></i><b>3.6.1</b> Lager aantal reeën</a></li>
 <li class="chapter" data-level="3.6.2" data-path="3-h-resultaten.html"><a href="3-h-resultaten.html#h:zichtbaarheid"><i class="fa fa-check"></i><b>3.6.2</b> Verandering van de zichtbaarheid op de trajecten</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html"><a href="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html"><i class="fa fa-check"></i><b>4</b> Schatting van de reepopulatie met behulp van <em>distance sampling</em></a><ul>
-<li class="chapter" data-level="4.1" data-path="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html"><a href="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html#methode"><i class="fa fa-check"></i><b>4.1</b> Methode</a></li>
-<li class="chapter" data-level="4.2" data-path="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html"><a href="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html#resultaten"><i class="fa fa-check"></i><b>4.2</b> Resultaten</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html"><a href="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html#problemenknelpunten-tijdens-het-onderzoek"><i class="fa fa-check"></i><b>4.2.1</b> Problemen/knelpunten tijdens het onderzoek</a></li>
+<li class="chapter" data-level="4" data-path="4-h-distancesampling.html"><a href="4-h-distancesampling.html"><i class="fa fa-check"></i><b>4</b> Schatting van de reepopulatie met behulp van <em>distance sampling</em></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="4-h-distancesampling.html"><a href="4-h-distancesampling.html#methode"><i class="fa fa-check"></i><b>4.1</b> Methode</a></li>
+<li class="chapter" data-level="4.2" data-path="4-h-distancesampling.html"><a href="4-h-distancesampling.html#resultaten"><i class="fa fa-check"></i><b>4.2</b> Resultaten</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="4-h-distancesampling.html"><a href="4-h-distancesampling.html#problemenknelpunten-tijdens-het-onderzoek"><i class="fa fa-check"></i><b>4.2.1</b> Problemen/knelpunten tijdens het onderzoek</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="5-conclusies.html"><a href="5-conclusies.html"><i class="fa fa-check"></i><b>5</b> Conclusies</a></li>
@@ -110,13 +118,13 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="conclusies" class="section level1">
+<div id="conclusies" class="section level1" number="5">
 <h1><span class="header-section-number">5</span> Conclusies</h1>
 <p>Na de daling van de gemiddelde kilometerindex die we in 2014, 2015 en 2016 vaststelden, leek
 de populatie zich te stabiliseren op een lager niveau. Terwijl de gemiddelde KI in de periode
 2008-2013 rond 1 ree/km schommelde, oversteeg de index sinds 2014 nooit 0,75. Sinds 2017
-zakte de KI tot onder 0,6. In 2020 zakte die nog verder tot 0,3, maar het is onduidelijk of dit al dan niet een gevolg is van een lager aantal tellingen in dat jaar.</p>
-<p>In 2016 haalden we al aan dat de dalende cijfers zou kunnen wijzen op een achteruitgang van de
+zakte de KI tot onder 0,6. Ook de waarde voor 2021 ligt met een gemiddelde van 0,5 opnieuw aan de lage kant in vergelijking met de cijfers sinds 2014 zodat de afname zich toch verder lijkt te zetten.</p>
+<p>In 2016 haalden we al aan dat de dalende cijfers kunnen wijzen op een daling van de
 reepopulatie in het Zoniënwoud. Om hier uitsluitsel over te kunnen geven, is het nodig om de
 mogelijke oorzaken van de achteruitgang te identificeren en om de nodige gegevens te
 verzamelen om die hypotheses te kunnen onderzoeken. Voorbeelden van dergelijke gegevens
@@ -127,24 +135,24 @@ andere wilde hoefdieren. Binnen het kader van de huidige monitoring is het in ka
 en opvolgen van deze mogelijke factoren echter niet voorzien.</p>
 <p>Om na te gaan of de waargenomen tendens een gevolg kan zijn van een verminderde
 waarnemingskans, voerden we in 2015 een bevraging uit bij de tellers. Bij hen bestond de
-perceptie dat de zichtbaarheid in het algemeen verminderd is, wat geheel of gedeeltelijk de
+perceptie dat de zichtbaarheid in het algemeen verminderd was, wat geheel of gedeeltelijk de
 daling van de KI zou kunnen verklaren. Een vergelijking van de zichtbaarheidsmetingen uit
 2015 en 2018 toont weinig verschillen. De zichtbaarheid is gelijkaardig in beide jaren. Dit was
 ook te verwachten gezien de korte periode tussen beide metingen en het uitblijven van
 gebeurtenissen die de zichtbaarheid plots kunnen wijzigen (bv. stormschade, natuurbrand of
 grootschalige kappingen). Veranderingen in zichtbaarheid in het bos door veranderingen in de
 vegetatie doen zich, zolang er geen calamiteiten optreden, normaal gezien slechts op langere
-termijn voor.</p>
+termijn voor. Ook de meer recente cijfers waarbij afstanden tot waargenomen reeën werden gemeten, wijzen niet op sterke verschillen in zichtbaarheid sinds 2018.</p>
+<p>Het verder ontrafelen van de invloed van een mogelijk dalende reepopulatie en vermindering van de zichtbaarheid op de detectiekans stelt uitdagingen aan de interpretatie van de gegevens. Toch is het niet te miskennen dat de cijfers, die systematisch en gestandaardiseerd worden verzameld, sterk afgenomen zijn. Omdat er geen aanwijzingen zijn dat de detectiekans is verminderd, zeker in de periode 2015-2021, lijkt het dus plausibel om uit te gaan van een dalende populatie van reewild in het Zoniënwoud. Een gedetailleerde en geïntegreerde analyse van de waarnemingen, afstanden en zichtbaarheidsmetingen lijkt aangewezen om op zoek te kunnen gaan eventuele ruimtelijke verschillen doorheen het gebied. Deze informatie kan helpen om de oorzaken van de achteruitgang te identificeren zodat maatregelen kunnen worden uitgetest om die te stoppen en indien mogelijk om te keren.</p>
 </div>
             </section>
         </div>
       </div>
     </div>
-<a href="4-schatting-van-de-reepopulatie-met-behulp-van-distance-sampling.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="4-h-distancesampling.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="referenties.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -163,6 +171,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -183,6 +192,10 @@ gitbook.start({
 "text": null
 },
 "download": ["RapportZonien.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
