@@ -5780,7 +5780,6 @@ td {
 /* Links */
 a {
   font-family: FlandersArtSans-Regular, Verdana, Arial, sans-serif;
-  color: inherit;
   outline: 0;
   text-decoration: none;
 }
@@ -5791,7 +5790,6 @@ a img {
 a:hover,
 a:active {
   text-decoration: underline;
-  color: inherit;
 }
 ul,
 ol {

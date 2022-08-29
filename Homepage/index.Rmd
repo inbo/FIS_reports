@@ -7,16 +7,10 @@ subtitle: "This homepage provides an overview of all interactive web versions of
 reportnr: ""
 ordernr: ""
 link-citations: TRUE
-site: bookdown::bookdown_site
+css: "css/inbo_rapport.css"
 output:
-  bookdown::gitbook:
-    split_by: "chapter+number"
-    template: !expr INBOmd::inbo_rapport_css("html")
-  bookdown::pdf_book:
-    base_format: INBOmd::inbo_rapport
-  bookdown::epub_book:
-    stylesheet: "css/inbo_rapport.css"
-    template: !expr INBOmd::inbo_rapport_css("epub")
+  html_document:
+    self_contained: FALSE
 ---
 
 ```{r setup, include=FALSE}
