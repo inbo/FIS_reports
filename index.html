@@ -1,58 +1,156 @@
 <!DOCTYPE html>
-<html >
+
+<html>
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Wildlife Management and Invasive Species (INBO)</title>
-  <meta name="description" content="Wildlife Management and Invasive Species (INBO)">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
-
-  <meta property="og:title" content="Wildlife Management and Invasive Species (INBO)" />
-  <meta property="og:type" content="book" />
-  
-  
-  
-  
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Wildlife Management and Invasive Species (INBO)" />
-  
-  
-  
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  
-  
+<title>Wildlife Management and Invasive Species (INBO)</title>
+
+<script src="index_files/header-attrs-2.14/header-attrs.js"></script>
+<script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="index_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="index_files/navigation-1.1/tabsets.js"></script>
+<link href="index_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="index_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
 
 
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
 
+<link rel="stylesheet" href="css/inbo_rapport.css" type="text/css" />
 
 
 
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
 
-<link href="libs/INBOmd-0.5.3/inbo_report.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
 
 
 
@@ -61,206 +159,100 @@
 <body>
 
 
+<div class="container-fluid main-container">
 
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
 
-    <div class="book-summary">
 
-<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-Licentie" style="border-width:0" src="libs/INBOmd-0.5.3/img/cc-by.svg" class = "cc"/>
-      <nav role="navigation">
 
-<ul class="summary">
-<li><a href="#section"></a></li>
-</ul>
+<div id="header">
 
-      </nav>
-    </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Wildlife Management and Invasive Species (INBO)</a>
-          </h1>
-        </div>
 
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-  <div id="header">
-    <h1 class="title">Wildlife Management and Invasive Species (INBO)</h1>
-    <h2 class="subtitle">This homepage provides an overview of all interactive web versions of reports made by the Wildlife Management and Invasive Species group at the Research Institute for Nature and Forest (INBO, Flanders, Belgium).</h2>
-              <h3 class="author">Contact information
-            </h3>
-                        <address class="author_afil">
-          <a class="author_email" href="mailto:#"><a href="mailto:faunabeheer@inbo.be" class="email">faunabeheer@inbo.be</a></a>
-          </address>
-                            <h1>Colofon</h1>
-    <h1 class = "missing">!!!! ONTBREKEND: reviewer !!!!</h1>
-  
-  <p>Het INBO is het onafhankelijk onderzoeksinstituut van de Vlaamse overheid dat via toegepast wetenschappelijk onderzoek, data‐ en kennisontsluiting het biodiversiteitsbeleid en ‐beheer onderbouwt en evalueert.
-
-  <p><b>Vestiging:</b><br>
-    INBO Brussel<br>Herman Teirlinckgebouw, Havenlaan 88 bus 73, 1000 Brussel
-    <br><a href="vlaanderen.be/inbo">vlaanderen.be/inbo</a>
-
-  <p><b>e-mail:</b><br><a class="author_email" href="mailto:#">info@inbo.be</a>
-
-  <p><b>Wijze van citeren:</b><br>
-      <h1 class = "missing">!!!! ONTBREKEND: shortauthor !!!!</h1>
-        <h1 class = "missing">!!!! ONTBREKEND: year !!!!</h1>
-    Wildlife Management and Invasive Species (INBO). . Rapporten van het Instituut voor Natuur- en Bosonderzoek
-        <h1 class = "missing">!!!! ONTBREKEND: reportnr !!!!</h1>
-    Instituut voor Natuur- en Bosonderzoek, Brussel. DOI:
-      <h1 class = "missing">!!!! ONTBREKEND: doi !!!!</h1>
-    <br>Exporteer referentie naar <button onclick="display_export('bibtex')" style = "color: #4183c4; background: #fff; border-width: 0px;">BibTex</button>
-  <button onclick="display_export('RIS')" style = "color: #4183c4; background: #fff; border-width: 0px;">RIS</button>
-  <button onclick="display_export('csl')" style = "color: #4183c4; background: #fff; border-width: 0px;">CSL-JSON</button>
-
-<script>
-function display_export(id) {
-  var x = document.getElementById(id);
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-
-<pre id = "bibtex" style ="display: none;">
-@TechReport{
-  author= {Contact information},
-  title = {Wildlife Management and Invasive Species (INBO). This homepage provides an overview of all interactive web versions of reports made by the Wildlife Management and Invasive Species group at the Research Institute for Nature and Forest (INBO, Flanders, Belgium).},
-  institution = {Instituut voor Natuur- en Bosonderzoek},
-  adress = {Brussel, België},
-  year = {},
-  number = { ()},
-  doi = {},
-  type = {techreport}
-}
-</pre>
-
-<pre id = "RIS" style ="display: none;">
-TY  - RPRT
-AU  - Contact information
-TI  - Wildlife Management and Invasive Species (INBO). This homepage provides an overview of all interactive web versions of reports made by the Wildlife Management and Invasive Species group at the Research Institute for Nature and Forest (INBO, Flanders, Belgium).
-DO  - 
-PB  - Instituut voor Natuur- en Bosonderzoek
-PP  - Brussel, België
-PY  - 
-SN  - 1782-9054
-ER  -
-</pre>
-
-<pre id = "csl" style ="display: none;">
-{
-  "id":"Contact information",
-  "type":"report",
-  "title":"Wildlife Management and Invasive Species (INBO). This homepage provides an overview of all interactive web versions of reports made by the Wildlife Management and Invasive Species group at the Research Institute for Nature and Forest (INBO, Flanders, Belgium).",
-  "author":[
-    {
-      "family":"Contact information"
-    
-    }
-  ],
-  "issued":{"date-parts":[[]]},
-  "publisher":"Instituut voor Natuur- en Bosonderzoek",
-  "publisher-place":"Brussel, België",
-}
-</pre>
-
-      <h1 class = "missing">!!!! ONTBREKEND: depotnr !!!!</h1>
-    <b>Rapporten van het Instituut voor Natuur- en Bosonderzoek
-      </b><br>
-  <b>ISSN: 1782‐9054</b>
-
-  <p><b>Verantwoodelijke uitgever:</b><br>Maurice Hoffmann
-
-      <h1 class = "missing">!!!! ONTBREKEND: cover_description !!!!</h1>
-  
-  
-  
-  <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-Licentie" style="border-width:0" src="libs/INBOmd-0.5.3/img/cc-by.svg" /></a><br />Dit werk valt onder een <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Naamsvermelding 4.0 Internationaal-licentie</a>.
-  </div>
-<div id="section" class="section level1 unnumbered">
-<h1 class="unnumbered"></h1>
-<p>Welcome to the reports homepage of the Wildlife Management and Invasive Species group at INBO.
-Although this page is still under construction, the reports embedded are all finished.
-Our current (limited) list of interactive reports is:</p>
-<p><a href="//inbo.github.io/fis-reports/Reports/Beaver%20telemetry/index.html">Beaver telemetry</a></p>
-<p><a href="//inbo.github.io/fis-reports/Reports/Beavermonitoring/index.html">Beavermonitoring</a></p>
-<p><a href="//inbo.github.io/fis-reports/Reports/Fox%20tapeworm%20in%20muskrats/index.html">Fox tapeworm in muskrats</a></p>
-<p><a href="//inbo.github.io/fis-reports/Reports/Overview%20camera%20trap%20images%20Life%20MICA/index.html">Overview camera trap images Life MICA</a></p>
-<p><a href="//inbo.github.io/fis-reports/Reports/Recensement%20du%20chevreuil%20Sonien%20(FR)/index.html">Recensement du chevreuil Sonien (FR)</a></p>
-<p><a href="//inbo.github.io/fis-reports/Reports/Reetellingen%20Zoniën%20(NL)/index.html">Reetellingen Zoniën (NL)</a></p>
-<p>Enjoy reading!</p>
+<h1 class="title toc-ignore">Wildlife Management and Invasive Species
+(INBO)</h1>
+<h3 class="subtitle">This homepage provides an overview of all
+interactive web versions of reports made by the Wildlife Management and
+Invasive Species group at the Research Institute for Nature and Forest
+(INBO, Flanders, Belgium).</h3>
+<h4 class="author">Contact information</h4>
+<a class="author_email" href="mailto:#"><a
+href="mailto:faunabeheer@inbo.be"
+class="email">faunabeheer@inbo.be</a></a>
+</address>
 
 </div>
 
-<p>&nbsp;</p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-Licentie" style="border-width:0" src="libs/INBOmd-0.5.3/img/cc-by.svg" class = "cc"/></a>
- (). 
-            </section>
-        </div>
-      </div>
-    </div>
+
+<div id="section" class="section level1 unnumbered">
+<h1 class="unnumbered"></h1>
+<p>Welcome to the reports homepage of the Wildlife Management and
+Invasive Species group at INBO. Although this page is still under
+construction, the reports embedded are all finished. Our current
+(limited) list of interactive reports is:</p>
+<p><a
+href="//inbo.github.io/fis-reports/Reports/Beaver%20telemetry/index.html">Beaver
+telemetry</a></p>
+<p><a
+href="//inbo.github.io/fis-reports/Reports/Beavermonitoring/index.html">Beavermonitoring</a></p>
+<p><a
+href="//inbo.github.io/fis-reports/Reports/Fox%20tapeworm%20in%20muskrats/index.html">Fox
+tapeworm in muskrats</a></p>
+<p><a
+href="//inbo.github.io/fis-reports/Reports/Overview%20camera%20trap%20images%20Life%20MICA/index.html">Overview
+camera trap images Life MICA</a></p>
+<p><a
+href="//inbo.github.io/fis-reports/Reports/Recensement%20du%20chevreuil%20Sonien%20(FR)/index.html">Recensement
+du chevreuil Sonien (FR)</a></p>
+<p><a
+href="//inbo.github.io/fis-reports/Reports/Reetellingen%20Zoniën%20(NL)/index.html">Reetellingen
+Zoniën (NL)</a></p>
+<p>Enjoy reading!</p>
+</div>
 
 
-  </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+
+
+</div>
+
 <script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/inbo/fis-reports/edit/master/Homepage/index.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
 });
 </script>
 
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 </body>
-
 </html>
